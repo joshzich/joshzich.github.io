@@ -1,27 +1,38 @@
-html{
-	color:red;
-}
 
 #post-title {
-  border: 1px solid green;
-  font-family:Impact;
+  /*border: 1px solid green;*/
+  font-family:Helvetica;
   padding-left: 10px;
 }
 
 #subtitle {
-  border: 1px solid green;
-  font-family:Impact;
+  /*border: 1px solid green;*/
+  font-family:Helvetica;
   padding-left: 10px;
 }
 
 #post-date {
-  border: 1px solid green;
-  font-family:Impact;
+  /*border: 1px solid green;*/
+  font-family:Helvetica;
   padding-left: 10px;
 }
 
 #post-content {
-  border: 1px solid green;
-  font-family:Impact;
+  /*border: 1px solid green;*/
+  font-family:Helvetica;
   padding-left: 10px;
+}
+
+#chef{
+  /*border: 1px solid green;*/
+  font-family:Helvetica;
+  padding-left: 10px;
+
+}
+
+#tech{
+  /*border: 1px solid green;*/
+  font-family:Helvetica;
+  padding-left: 10px;
+
 }
