@@ -1,0 +1,27 @@
+html{
+	color:red;
+}
+
+#post-title {
+  border: 1px solid green;
+  font-family:Impact;
+  padding-left: 10px;
+}
+
+#subtitle {
+  border: 1px solid green;
+  font-family:Impact;
+  padding-left: 10px;
+}
+
+#post-date {
+  border: 1px solid green;
+  font-family:Impact;
+  padding-left: 10px;
+}
+
+#post-content {
+  border: 1px solid green;
+  font-family:Impact;
+  padding-left: 10px;
+}
