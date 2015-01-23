@@ -1,0 +1,31 @@
+html{
+	background-color:#D1C814;
+	font-family: Helvetica;
+}
+#header{
+	background-color:#FF082F;
+	height:12em;
+
+
+
+
+}
+#footer{
+	background-color:#FF082F;
+}
+
+.top{
+	background-color:#00B2FF;
+	text-align:center;
+	padding:1em;
+
+}
+
+#about{
+	background-color:#FFF9FA;
+	height:50em;
+	margin:15em;
+	padding:10em;
+}
+
+
