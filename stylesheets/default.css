@@ -1,13 +1,19 @@
 html{
-	background-color:#D1C814;
+	background-color:white;
 	font-family: Helvetica;
 }
 #header{
 	background-color:#FF082F;
 	height:12em;
 
+}
 
+img{
+	height:150px;
+	width:150px;
+	border:1px solid black;
 
+}
 
 }
 #footer{
@@ -28,4 +34,18 @@ html{
 	padding:10em;
 }
 
+.techblogimg{
 
+	height:45%;
+	width:45%;
+}
+.techblogfixed{
+	height:200px;
+	width:200px;
+}
+
+#firstexample{
+
+	height:25%;
+	width:25%;
+}
