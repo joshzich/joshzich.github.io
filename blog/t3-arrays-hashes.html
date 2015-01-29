@@ -16,19 +16,47 @@
   <h4>01/28/15</h4>
 </div>
 <section id="post-content">
-  <p>Hashes and Arrays make life easier in programming because they allow you to store things away and to retrieve them when needed.</p>
+  <p><span>Hashes and Arrays</span> make life easier in programming because they allow you to store things away and to retrieve them when needed. The fundamental difference debtween arrays and hashes has to do with how you retrieve what you need from them.</p>
 
-  <p>The fundamental difference debtween arrays and hashes has to do with how you retrieve what you need from them.</p>
+  <p>An array contains objects which you can retrieve via index starting at 0 and going for as long as the list is. So if you had an array like this:</p>
+  <code>[1, 2, 3, 4, 5]</code>
+  <p>and you called 0 on the array like this:</p>
+    <code>array[0]</code>
+  <p>then you would get the first number in the array, 1. If you called</p>
+  <code>array[2]</code>
+  <p>you would get 3, and so on.</p> 
 
-  <p>An array contains objects which you can retrieve via index starting at 0 and going for as long as the list is. So if you had an array like this: <code>[1, 2, 3, 4, 5]</code> and you called 0 on the array like this: <code>array[0]</code>, then you would get the first number in the array, 1. If you called <code>array[2]</code>, you would get 3 and so on.</p> 
-
-  <p>Instead of an index, a Hash has what are called 'key value pairs'. A hash could look like this: <code>{'NC'=>'North Carolina', 'SC'=>'South Carolina', 'TN'=>'Tennessee'}</code>. In order to access North Carolina, you would have to call it with its key NC: <code>hash['NC']</code>.</p>
+  <p>Instead of an index, a hash has what are called 'key value pairs'. A hash could look like this:</p>
+  <code>{'NC'=>'North Carolina', 'SC'=>'South Carolina', 'TN'=>'Tennessee'}</code>
+  <p>In order to access North Carolina, you would have to call it with its key NC:</p> 
+  <code>hash['NC']</code>
 
   <p>The objects in a hash have no order since they only correspond with their individual keys.</p>
 
-  <p>The order of an array does matter however, and there are sever methods that can take advantage of the order of and change the order of arrays.</p>
+  <p>The order of an array does matter however, and there are several methods that can take advantage, and change the order of arrays.</p>
 
-  <p>Broadly speaking, arrays come in handy when organization easily applicable to the data and needed for the situation in which you want to use the data. While hashes are more useful for situastions in which little organization is needed and less easily imposed on the data. </p>
+  <p>Broadly speaking, arrays come in handy when organization is easily applicable to the objects inside and needed for the situation in which you want to use the objects. While hashes are more useful for situations in which little organization is needed and less easily imposed. </p>
+
+  <p>For example, if you needed to organize names aphabetically, you would want to use an array because there is an easy method to do that with an array.</p>
+
+  <code>names = ['doris', 'eugene', 'alan', 'barbara']</code>  
+
+  <p>With</p>
+  <code>.sort!</code>
+  <p>you can permanantly alter the list to be sorted aphabetically.</p>
+
+  <img style="height:50%;width:50%" src="../technicalblog/screenshots/arrayalphabetize.png"/> 
+
+  <p>If you wanted to access information about each individual, you may want to make a hash for each one.</p>
+
+  <p>For example:</p> 
+  <code>helen = {'age'=>43,'hometown'=>'New York','favorite color'=>'blue'</code>
+
+  <p>Now you will be able to access specific information about helen with different keys. But there would be little or no reason to alphabetize this information like we we could do with a list, and a key makes more sense rather than some number on an index.</p>
+
+  <img style="height:50%;width:50%" src="../technicalblog/screenshots/hashkey.png"/> 
+
+
 
   
 </section>
