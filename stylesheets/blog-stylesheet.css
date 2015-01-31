@@ -2,12 +2,14 @@
 #post-title {
   /*border: 1px solid green;*/
   font-family:Helvetica;
+  font-size: 3em;
   padding-left: 10px;
 }
 
 #subtitle {
   /*border: 1px solid green;*/
   font-family:Helvetica;
+  font-size: 2.5em;
   padding-left: 10px;
 }
 
@@ -20,6 +22,7 @@
 #post-content {
   /*border: 1px solid green;*/
   font-family:Helvetica;
+  font-size:2em;
   padding-left: 10px;
 }
 
