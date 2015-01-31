@@ -1,9 +1,9 @@
 html{
-	background-color:white;
+	background-color:#E7E9D1;
 	font-family: Helvetica;
 }
 #header{
-	background-color:#FF082F;
+	background-color:#D3D4AA;
 	height:12em;
 
 }
@@ -17,11 +17,11 @@ img{
 
 }
 #footer{
-	background-color:#FF082F;
+	background-color:#D3D4AA;
 }
 
 .top{
-	background-color:#00B2FF;
+	background-color:#D3D4AA;
 	text-align:center;
 	padding:1em;
 
