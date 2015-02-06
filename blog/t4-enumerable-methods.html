@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+  <title>group_by</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css "/>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css"/>
+</head>
+<main>
+<div id="post-title">
+  <h1>group_by</h1>
+</div>
+<div id="subtitle">
+  <h2>How does it work?</h2>
+</div>
+<div id="post-date">
+  <h4>02/05/15</h4>
+</div>
+<section id="post-content">
+  <p>Have you ever wanted to group elements of data before into sub-groups in Ruby but didn't know how?</p>
+  <p>I am new to programming, and I just discovered an enumberable method that can be used for just that.</p>
+  <p>
+    The method <code>group_by</code> is a way of getting elements from an array into a hash by organizing them under arrays whose keys are the results returned by the block. 
+  </p>
+  <p>
+    For example, if we wanted to organize a list of movies aphabetically
+    <code> movies = ["Star Wars", "Jaws", "Harry Potter", "Alphaville", "Alien", "Django Unchained", "Dancer in the Dark", "Tron"] </code>
+     but wanted to pull them up in groups like 'A-F','G-L','M-S','T-Z'.  we would type:  
+  </p>
+  <img class="groupbypicture" src="../technicalblog/moviegroupby.png"/>
+  <img class="groupbypicturetext" src="../technicalblog/moviekeys.png"/>
+  <p>
+    Say you wanted to catagorize numbers by how many times 5 can go into them.  <code> numbers = (1..20).to_a.group_by {|num| num/5}</code>
+
+  </p>
+  <p>You get the resulting hash:</p>
+
+  <img class="groupbypicturetext" src="../technicalblog/numberkeys.png">
+  
+</section>
+<div id="footer">
+  <h1> Blogs </h1>
+  <a href="http://joshzich.github.io/blog/c1-chefs-kitchen.html">Chefs in the Kitchen</a>
+  <a href="http://joshzich.github.io/blog/t1-git-blog.html"> Git'er Done</a>
+  <a href="http://joshzich.github.io/blog/t2-css-design.html">It's all Relative...err...also Absolute, Fixed, and Static!</a>
+  <a href="http://joshzich.github.io/blog/t3-arrays-hashes.html">Hashes and Arrays</a>
+  <a href="http://joshzich.github.io/blog/t4-enumerable-methods.html">group_by</a>
+  <a href="http://joshzich.github.io/blog/c4-tech-issues.html">Tech Issues</a>
+</div>
+</main>
