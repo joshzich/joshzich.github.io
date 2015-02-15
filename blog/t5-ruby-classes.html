@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+  <title>Stay Classy</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css "/>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css"/>
+</head>
+<main>
+<div id="post-title">
+  <h1>Stay Classy</h1>
+</div>
+<div id="subtitle">
+  <h2>A Brief Explanation of Classes</h2>
+</div>
+<div id="post-date">
+  <h4>Today's Date</h4>
+</div>
+<section id="post-content">
+  <p>
+    Object oriented programming is obviously centered around objects. Objects make up everything in the universe of
+    OOP. 
+
+  Objects are what we use to store and retrieve information, interact with one another, and perform any task within a program. 
+  </p>
+  <p>
+  Classes are blue prints for objects. They define what objects are, and what they can do. Since classes define objects, they are the foundation of object oriented programming. 
+
+    Every object (including classes themselves) are defined by classes. Let's create a class for a specific object, to show how classes operate. 
+  </p>
+
+  <p>
+    For this demonstration, I decided to go with a 'Cat class'. When we create an object, or an instance of this class, we will be able to manipulate/interact with it as we define in the Cat class. 
+
+    First, we need to define the class and give it an initialize method. 
+  </p>
+  <img src="../technicalblog/classCatinitialize.png"/>
+  <p>
+    As arguments, we add some attributes to fill in for our cats when they are created. Then we assign them to what are called 'instance variables'.
+  </p>
+  <img src="../technicalblog/Catinstancevars.png"/>
+  <p>
+    Instance variables remain a part of the individual instance of each cat you create. They can be accessed by other instance methods that we will add to our Cat class. 
+  </p>
+
+  <p>
+    We could add an individual 'reader' method to access and read the attributes we give to our cats. That would look like this:
+  </p>
+  <img src="../technicalblog/readermethod.png"/>
+
+  <p>
+    
+  </p>
+
+  <img src="../technicalblog/readermethodoutput.png"/> <!-- makebigger -->
+
+  <p>
+   That looks kind of messy though. A much easier and flexible way to do this is to use an attr_reader method:
+  </p>
+
+  <img src="../technicalblog/attr_readermethod.png"/>
+
+  <p>
+   This way we can easily get a reading on the attributes we assign to our cat and call them individually. 
+  </p>
+
+  <img src="../technicalblog/readermethodoutput.png"/> <!-- makebigger -->
+
+  <p>
+    Now, let's give our cat some actions. First let's give our cats the ability to meow. 
+  </p>
+
+  <img src="../technicalblog/Catspeak.png"/> 
+  <p></p>
+  <img src="../technicalblog/meow.png"/>
+  <p>
+    Alright now let's add some more interesting interactivity. We'll set up a 'feed' method that passes an argument to our cat. Depending on what argument you pass, the cat will react differently. If the cat is fed too many times, it will become full and ignore whatever food you give it. 
+  </p>
+
+  <img src="../technicalblog/feedmethod.png"/>
+
+  <p>
+    We will also add a <code>@times_fed = 0</code> to our initialize method to start the count at zero.
+  </p>
+  <img src="../technicalblog/timesfed.png"/>
+  <p>
+   Then we'll add a <code>sleep</code> method that will reset the count. 
+  </p>
+  <img src="../technicalblog/sleepreset.png"/>
+  <p>
+  We call the feed method once with the argument of cat food...
+  </p>
+  <img src="../technicalblog/catfoodcalledonce.png"/>
+
+  <p>
+  And our cat purrs. 
+  </p>
+
+  <img src="../technicalblog/Calledonce.png"/>
+
+  <p>
+    Here we will call the method past the limit of 5, sleep to reset the counter, and then feed the cat tuna. 
+  </p>
+  <img src="../technicalblog/ignorestunainput.png"/>
+
+  <p></p>
+
+  <img src="../technicalblog/Callscatfoodignorestuna.png"/>
+
+  <p>
+    As you can see, when we when we call the methods in order we get the expected results. You're probably starting to imagine, if you haven't already, the large implications this has on a program. 
+  </p>
+
+  
+
+  <p>
+    Classes play a vital role in the life of any program. They enable objects to do 
+    anything that we need them to do. Instance variables and methods are literally the
+    primary tools we need to manipulate those objects in a uniform fassion after they are
+    created. And our initialize method takes arguments that make our objects unique in their attributes.  
+  </p>
+
+  <p>
+    I hope that you have enjoyed this brief introduction to classes in Ruby! If you enjoyed this, you might want to check out the links to my other blogs below. 
+  </p>
+
+</section>
+<div id="footer">
+  <h1> Blogs </h1>
+  <a href="http://joshzich.github.io/blog/c1-chefs-kitchen.html">Chefs in the Kitchen</a>
+  <a href="http://joshzich.github.io/blog/t1-git-blog.html"> Git'er Done</a>
+  <a href="http://joshzich.github.io/blog/t2-css-design.html">It's all Relative...err...also Absolute, Fixed, and Static!</a>
+  <a href="http://joshzich.github.io/blog/t3-arrays-hashes.html">Hashes and Arrays</a>
+  <a href="http://joshzich.github.io/blog/t4-enumerable-methods.html">group_by</a>
+  <a href="http://joshzich.github.io/blog/c4-tech-issues.html">Tech Issues</a>
+</div>
+</main>
