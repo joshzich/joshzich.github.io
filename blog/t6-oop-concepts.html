@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+  <title>Modules vs. Classes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css "/>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css"/>
+</head>
+<main>
+<div id="post-title">
+  <h1>Modules vs. Classes</h1>
+</div>
+<div id="subtitle">
+  <h2>A comparison</h2>
+</div>
+<div id="post-date">
+  <h4>02/21/2015</h4>
+</div>
+<section id="post-content">
+  <p>
+    So, we've talked about classes. They are blueprints for our objects that contain attributes, variables, and methods that will let our objects function in the world we create for them. So, where do modules fit in? 
+  </p>
+
+  <p>
+    Modules are much like classes in that they contain all of the same things. But, you cannot create an instance of a module. 
+    Classes can obtain methods and attributes from modules much the same way that classes can inherit methods and attributes from a parent class. 
+  </p>
+  <p>
+    The large difference is that classes can only inherit from one other class, and they can <code>include</code> (sort of a word for inheriting from a module) many different modules. 
+  </p>
+
+  <p>
+    NOTE: <code>include</code> only will allow instance methods gathered from modules. <code>extend</code> is used to mix in class methods. 
+  </p>
+
+  <p>
+    If a class B inherits from class A, and <code>include</code>s a model, class B will also inherit the module in much the way B would inherit what A has from a class that A inherited from. 
+  </p>
+
+  <p>
+    Modules can be useful for functionalities that apply to many different objects. Say you have an Mammal class. And you have several child classes: HouseCat, Dog, and Tiger. You may want a Pet module to be included in only animals that would fit that definition. But you still want to inherit from Mammal class because we want those attributes to be shared by all of our child classes. 
+  </p>
+
+  <img src="../technicalblog/classesmodule.png">
+  <img src="../technicalblog/classmodulecalling.png">
+  <img src="../technicalblog/classmoduleoutput.png">
+
+  <p>
+    But wait, don't HouseCat and Tiger share something in common? They are both Cats...they should both be able to purr! Right? Well, we could make a whole new child class for Cat for them to inherit from, or we could just make a module with purr functionality. Especially if all we want is purring, a module is better. Though mainly cats are known for their purring, other animals exhibit this behavior as well (elephants, squirrels ect..) so our module might come in handy later for classes that don't fall in the cat CATigory (haha, get it?).  
+  </p>
+
+  <img src="../technicalblog/classesmodulesfinal.png">
+  <img src="../technicalblog/classmodulecallingfinal.png">
+  <img src="../technicalblog/classmodulesoutputfinal.png">
+
+  <!-- copy and paste as many sections as you want to add paragraphs -->
+</section>
+<div id="footer">
+  <h1> Blogs </h1>
+  <a href="http://joshzich.github.io/blog/c1-chefs-kitchen.html">Chefs in the Kitchen</a>
+  <a href="http://joshzich.github.io/blog/t1-git-blog.html"> Git'er Done</a>
+  <a href="http://joshzich.github.io/blog/t2-css-design.html">It's all Relative...err...also Absolute, Fixed, and Static!</a>
+  <a href="http://joshzich.github.io/blog/t3-arrays-hashes.html">Hashes and Arrays</a>
+  <a href="http://joshzich.github.io/blog/t4-enumerable-methods.html">group_by</a>
+  <a href="http://joshzich.github.io/blog/c4-tech-issues.html">Tech Issues</a>
+  <a href="http://joshzich.github.io/blog/t5-ruby-classes.html">Ruby Classes</a>
+  <a href="http://joshzich.github.io/blog/c5-feedback.html">Pairing</a>
+  <a href="http://joshzich.github.io/blog/c6-stereotype-threat.html">Stereotype Threat</a>
+  <a href="http://joshzich.github.io/blog/t6-oop-concepts.html">Classes vs. Modules</a>
+</div>
+</main>
