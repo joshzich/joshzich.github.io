@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+  <title>JavaScript</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css "/>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css"/>
+</head>
+<main>
+<div id="post-title">
+  <h1>JavaScript vs Ruby</h1>
+</div>
+<div id="subtitle">
+  <h2>Ruby's Hash vs JavaScript's Object</h2>
+</div>
+<div id="post-date">
+  <h4>02/24/2015</h4>
+</div>
+<section id="post-content">
+  <p>
+   I'm brand spanking new to JavaScript but I have some familiarity with Ruby. This week I've gotten my first taste of JavaScript Objects. At first, I was fooled into thinking that these were objects as in 'Object Oriented Programming'. When dealing with an object, being more familiar with Ruby, I thought that what I would be dealing with were classes. Classes in Ruby have attributes, and they are blueprints for objects.
+  </p>
+  <p>
+    So, when I first read about Objects in JS, properties are mentioned. That lead me to believe that I was defining the equivalent of class attributes in Ruby. This is not the case! 
+  </p>
+  <p>
+    Objects in JS are sort of like Hashes are in Ruby. They are variables that store properties (the Ruby equivalent would be keys), and, when those properties are defined, they correspond with a value.  
+  </p>
+  <code>
+    var object = {
+
+      property: "value",
+
+      anotherProperty: "another value",
+
+    }
+  </code>
+
+  <p>
+    Here is the Ruby equivalent:
+  </p>
+
+  <code>
+    hash = {k1:"value one", K2:"value two", K3:"value three"}
+  </code>
+
+  <p>
+    While in ruby to retrieve the value you would write <code>hash[:k1]</code>,
+  </p>
+
+  <p>
+    In JS you can write <code>object.property</code>.
+  </p>
+
+  <p>
+    You can easily change, add, or delete values to an Object after initializing it. 
+  </p>
+
+  <code>
+    object.newproperty = "this is a new value"
+  </code>
+
+
+  <p>
+    The equivalent in Ruby looks like this:
+  </p>
+
+  <code>
+    hash[k4] = "new value"
+  </code>
+
+  <p>
+    If you are familiar with Ruby, you may have noticed that when a property is called on an Object in JS it looks very similar to a method call on an object in Ruby. The truth is that methods can be added to these Objects and called upon through this notation. There are also build in methods in JS that can be called on them. In Ruby, you would need to change the Hash class to add a new instance method. Here is how you add a method to an Object in JavaScript:
+  </p>
+
+  <code>
+    object.method = function(num1, num2) {
+      return num1 + num2;
+    }
+  </code>
+
+  <p>
+    There is also something called an Object constructor. This functions sort of like a class in Ruby. It is a function that creates Objects in JS. But more on that later! 
+  </p>
+
+  <p>
+    I hope that this clears some things up about JS. I am an uber-beginner here. But I hope this can shed some light for someone transitioning from Ruby to learning JS for the first time. 
+  </p>
+</section>
+<div id="footer">
+  <h1> Blogs </h1>
+  <a href="http://joshzich.github.io/blog/c1-chefs-kitchen.html">Chefs in the Kitchen</a>
+  <a href="http://joshzich.github.io/blog/t1-git-blog.html"> Git'er Done</a>
+  <a href="http://joshzich.github.io/blog/t2-css-design.html">It's all Relative...err...also Absolute, Fixed, and Static!</a>
+  <a href="http://joshzich.github.io/blog/t3-arrays-hashes.html">Hashes and Arrays</a>
+  <a href="http://joshzich.github.io/blog/t4-enumerable-methods.html">group_by</a>
+  <a href="http://joshzich.github.io/blog/c4-tech-issues.html">Tech Issues</a>
+  <a href="http://joshzich.github.io/blog/t5-ruby-classes.html">Ruby Classes</a>
+  <a href="http://joshzich.github.io/blog/c5-feedback.html">Pairing</a>
+  <a href="http://joshzich.github.io/blog/c6-stereotype-threat.html">Stereotype Threat</a>
+  <a href="http://joshzich.github.io/blog/t6-oop-concepts.html">Classes vs. Modules</a>
+  <a href="http://joshzich.github.io/blog/t7-JavaScript.html">JavaScript</a>
+  <a href="http://joshzich.github.io/blog/c7-values.html">Value</a>
+</div>
+</main>
