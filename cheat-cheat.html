@@ -10,29 +10,29 @@
     <h2>by Josh Zich and Alex Knoll</h2>
   </header>
 
-  <article>
+  <article id="left-article">
     <h2>Ruby</h2>
 
     <h3>While Loops</h3>
     <section>
       A while loop establishes a condition that while true, will continue to loop through a specified block of code.  The condition is separated from the block of code to be executed by a line break.  The end of the block of code to be executed is denoted by the keyword end.
-      <pre id = "leftwhile">   
-              i = 0         
-              while i < 10  
-                puts i      
-                i += i      
-              end  
+      <pre class = "code">
+i = 0
+while i < 10
+  puts i
+  i += 1
+end
 
-              # 0
-              # 1
-              # 2
-              # 3
-              # 4
-              # 5
-              # 6
-              # 7
-              # 8 
-              # 9         
+# 0
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
       </pre>
 
     </section>
@@ -40,46 +40,78 @@
     <h3>For Loops</h3>
     <section>
       A for loop specifies an arbitrary variable that is defined for each element in a specified expression.  For each definition, a block code is executed.  The end of the block of code to be executed is denoted by the keyword end.
-      <code></code>
+      <pre class = "code">
+for i in 0..9
+  puts i
+  i += 1
+end
+
+# 0
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+      </pre>
     </section>
   </article>
 
-  <article>
+  <article id="right-article">
     <h2>JavaScript</h2>
 
     <h3>While Loops</h3>
     <section>
       A while loop establishes a condition that while true, will continue to loop through a specified block of code.  The condition is enclosed in parentheses () and the block of code to be executed is enclosed in curly braces {}.
-      <pre id = "rightwhile">
-          var i = 0
-          while (i < 10) {
-            console.log(i);
-            i++; 
-          }
-            // 0
-            // 1
-            // 2
-            // 3
-            // 4
-            // 5
-            // 6
-            // 7
-            // 8 
-            // 9  
+      <pre class = "code">
+var i = 0
+while (i < 10) {
+console.log(i);
+i++;
+}
+// 0
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
       </pre>
     </section>
 
     <h3>For Loops</h3>
     <section>
       A for loop contains three statements and a block of code to be executed.  The first statement is executed once, and typically is used to establish a counter variable.  The second statement contains the condition, which when met will execute the block of code.  The third statement is executed after each iteration through the block of code.  Each of the three statements are separated by commas, and are all enclosed in parentheses.  The block of code to be executed is enclosed in curly braces.
-      <code></code>
+      <pre class = "code">
+for (i = 0; i < 10; i++) {
+console.log(i);
+}
+// 0
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
+      </pre>
     </section>
  </article>
 
 <footer>
   <h2>Resources</h2>
-  <a href="http://www.tutorialspoint.com/ruby/ruby_loops.htm">Ruby Loops on tutorialspoint.com</a>
-  <a href="http://www.w3schools.com/js/js_loop_for.asp">JavaScript Loops on w3schools.com</a>
+  <section>
+    <a href="http://www.tutorialspoint.com/ruby/ruby_loops.htm">Ruby Loops on tutorialspoint.com</a><br>
+    <a href="http://www.w3schools.com/js/js_loop_for.asp">JavaScript Loops on w3schools.com</a>
+  </section>
 </footer>
 
 </body>
