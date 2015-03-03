@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+article {
+  margin: 0;
+  width: 45%;
+  display: inline-block;
+
+}
+
+#rightwhile{
+	background-color: #d3d3d3;
+
+	border: 1px solid black;
+
+	padding-top: 10px
+	
+}
+
+#leftwhile {
+	background-color: #d3d3d3;
+
+	border: 1px solid black;
+
+}
