@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+  <title>Active Record</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css "/>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css"/>
+</head>
+<main>
+<div id="post-title">
+  <h1>Active Record</h1>
+</div>
+<div id="subtitle">
+  <h2></h2>
+</div>
+<div id="post-date">
+  <h4>03/05/15</h4>
+</div>
+<section id="post-content">
+  <p>
+    Web applications often require a lot of data that is constantly in flux. When dealing with a lot of data, it helps to be able to keep track of that data in an organized way. 
+  </p>
+
+  <p>
+    Active record is a pattern for facilitating something called Object Relational Mapping, and was originally defined by Martin Fowler in his book Patterns of Enterprise Application Architecture. This means that accessing and storing data about objects in databases is made possible without actually having to go to the trouble of writing SQL queries. 
+  </p>
+
+
+  <p>
+    In Ruby on Rails, ActiveRecord is a library that provides a common base for models, and is used to implement the active record pattern. 
+  </p>
+
+  <p>
+    For example, if you cause a class to inherit from the class Base in the ActiveRecord library, you gain access to methods that allow you to create and pull data from a database without writing any SQL. Methods in ActiveRecord’s classes allow one to easily turn class attributes into columns in SQL and new objects into rows. 
+  </p>
+
+  <code> class User < ActiveRecord::Base </code>
+
+  <p>
+    To create the table in the database, it is necessary to create a schema class that inherits the tools from a class in ActiveRecord called Migration. This may be confusing, remember that once you create a class that inherits from Base, you gain methods to read and write new rows and columns in a data base, and that is not the same as actually making a new table.
+  </p>
+
+  <code>class UserTable < ActiveRecord::Migration</code>
+
+  <p>
+    Again, this is all done through writing easy-to-read Ruby, making the life of the programmer a lot easier. 
+  </p>
+
+  <p>
+    If you are interested in learning more about ActiveRecord and Active Record Planning, please see these links:
+  </p>
+  <a href="http://en.wikipedia.org/wiki/Active_record_pattern">Active record pattern</a>
+  <a href="http://guides.rubyonrails.org/active_record_basics.html">ActiveRecord in Rails</a>
+  <a href="http://en.wikipedia.org/wiki/Object-relational_mapping">http://www.agiledata.org/essays/mappingObjects.html</a>
+  <!-- copy and paste as many sections as you want to add paragraphs -->
+</section>
+<div id="footer">
+  <h1> Blogs </h1>
+  <a href="http://joshzich.github.io/blog/c1-chefs-kitchen.html">Chefs in the Kitchen</a>
+  <a href="http://joshzich.github.io/blog/t1-git-blog.html"> Git'er Done</a>
+  <a href="http://joshzich.github.io/blog/t2-css-design.html">It's all Relative...err...also Absolute, Fixed, and Static!</a>
+  <a href="http://joshzich.github.io/blog/t3-arrays-hashes.html">Hashes and Arrays</a>
+  <a href="http://joshzich.github.io/blog/t4-enumerable-methods.html">group_by</a>
+  <a href="http://joshzich.github.io/blog/c4-tech-issues.html">Tech Issues</a>
+  <a href="http://joshzich.github.io/blog/t5-ruby-classes.html">Ruby Classes</a>
+  <a href="http://joshzich.github.io/blog/c5-feedback.html">Pairing</a>
+  <a href="http://joshzich.github.io/blog/c6-stereotype-threat.html">Stereotype Threat</a>
+  <a href="http://joshzich.github.io/blog/t6-oop-concepts.html">Classes vs. Modules</a>
+  <a href="http://joshzich.github.io/blog/t7-JavaScript.html">JavaScript</a>
+  <a href="http://joshzich.github.io/blog/c7-values.html">Value</a>
+  <a href="http://joshzich.github.io/blog/c8-conflict.html">Conflict</a>
+  <a href="http://joshzich.github.io/blog/t8-tech.html">Conflict</a>
+</div>
+</main>
