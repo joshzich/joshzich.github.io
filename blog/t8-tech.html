@@ -46,14 +46,67 @@
   </p>
 
   <p>
-    If you are interested in learning more about ActiveRecord and Active Record Planning, please see these links:
+    One fundamental part of AR is that it stores the relationship between models. These relationships are called 'associations'. As part of the Base class, you can impart on objects the relationships that they have with other objects. These relationships will remind you of one-to-one, one-to-many, and many-to-many relatiohsips in your typical relational data-base. Not only does active record store these relationships in a data-base like you would expect, it also adds methods to the objects themselves that allow you to call on these relationships. If there were no associations between models, the objects themselves wwould be unable to tell us who they belong to. For instance, if you have a Car class and a Person class, you might want each Car to only have one owner. 
+  </p>
+
+  <p>
+    Create the Car class with the Base instance method <code> has_one </code> and then followed by the name of the class <code> Person</code>. 
+  </p>
+
+  <pre>
+  class Car < ActiveRecord::Base
+    has_one :person 
+  end
+  </pre>
+
+  <p>
+    And you would do likewise for the creation of the Person class accept with the <code> has_many </code> method.  
+  </p>
+
+  <pre>
+  class Person < ActiveRecord::Base
+    has_many :cars
+  </pre>
+
+
+  <p>
+    The varying names of the models have to do more with their table names than with their class names. Because Rails will automatically 
+    pluralize the name of a class to make a table for that class, Rails knows what you are talking about when you pluralize the name with the corresponding has_many method. 
+  </p>
+
+
+  <p>
+    The last thing I will talk about when it comes to AR is Validations. Validations are again part of the Base class. You will use them in order to set conditions for the creation of your objects in the database. For instance:
+  </p>
+
+  <pre>
+  class Car < ActiveRecord::Base
+    validates :type, presence: true
+  end
+  </pre>
+
+  <p>
+    This will prevent a car from being added to the database that doesn't have a type defined. You can see how this will prevent your database from being poluted with unusable data. You get to set the conditions for the creation of new data to your database. 
+  </p>
+
+  <p>
+    There is much more to discuss on each of these topics. But I hope that this gives you a brief overview of ActiveRecord. 
+  </p>
+
+  <p>
+    If you are interested in learning more about ActiveRecord, please see these links:
   </p>
   <a href="http://en.wikipedia.org/wiki/Active_record_pattern">Active record pattern</a>
   <p></p>
   <a href="http://guides.rubyonrails.org/active_record_basics.html">ActiveRecord in Rails</a>
   <p></p>
   <a href="http://www.agiledata.org/essays/mappingObjects.html">ORM</a>
-  <!-- copy and paste as many sections as you want to add paragraphs -->
+  <p></p>
+  <a href="http://guides.rubyonrails.org/active_record_validations.html">Validations</a>
+  <p></p>
+  <a href="http://guides.rubyonrails.org/association_basics.html">Associations</a>
+  <p></p>
+  <a href="https://www.railstutorial.org/book/modeling_users">Modeling Users</a>
 </section>
 <div id="footer">
   <h1> Blogs </h1>
