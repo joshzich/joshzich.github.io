@@ -1,14 +1,27 @@
 html{
-	background-color:#E7E9D1;
+	/*background-color:#E7E9D1;*/
 	font-family: Helvetica;
+	height:100%;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+
+body {
+	height:100%;
+	width:100%;
+	padding:0;
+	margin:0;
 }
 #header{
 	background-color:#D3D4AA;
 	height:15em;
+	z-index: 5;
+
 }
 
 #post-title{
-	font-size: 3em
+	font-size: 2em
 }
 
 }
@@ -20,9 +33,12 @@ img{
 
 }
 
-}
+
+
 #footer{
-	background-color:#D3D4AA;
+	background-color:#EBEBF4;
+	margin-bottom: 0;
+	width: 100%;
 }
 
 .top{
@@ -71,4 +87,85 @@ code {
 	width:100%;
 }
 
+header {
+	top: 0;
+	width: 100%;
+	position: fixed;
+	height: 69px;
+	background-color: #EBEBF4;
+	padding-left: 23px;
+	padding-top: 2px;
+	z-index: 10;
 
+}
+
+
+/* main content section */
+
+
+/*.left { 
+	float:left;
+}*/
+
+.right {
+	float:right;	
+};
+.column {
+	background-color: #fff;
+	height: 100%;
+	width: 49%;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: left;
+}
+.container {
+	margin-top: 10em;
+	position:relative;
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+	font-size: 1em;
+
+	text-align: center;
+	
+}
+#twitter-widget-0 {
+	position: relative;
+	top: 100px;
+}
+
+.links {
+	position: absolute;
+	top:35px;
+	
+}
+
+.twitter {
+
+	right:42px;
+}
+.linkdin {
+	right: 95px;
+}
+
+.github {
+	right: 162px;
+}
+h1 {
+	color: #fff;
+	width: 200px;
+
+}
+.intro {
+	top: 5em;
+	font-size: 3em;
+	font-weight: 100;
+}
+
+.name {
+	font-size: 5em;
+}
+
+#footer < h1 {
+	margin: 0;
+}
