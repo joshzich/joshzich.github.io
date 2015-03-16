@@ -37,6 +37,7 @@ img{
 
 #footer{
 	background-color:#EBEBF4;
+	margin-top: 2em;
 	margin-bottom: 0;
 	width: 100%;
 }
@@ -166,6 +167,3 @@ h1 {
 	font-size: 5em;
 }
 
-#footer < h1 {
-	margin: 0;
-}
